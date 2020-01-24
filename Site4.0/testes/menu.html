@@ -1,0 +1,942 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="pt-BR"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7"lang="pt-BR"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="pt-BR"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="pt-BR"> <!--<![endif]-->
+<head>
+
+	<meta charset="UTF-8" />
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Tutoriais, Dicas, Artigos,- Henrique</title>
+	<script>(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- This site is optimized with the Yoast SEO plugin v11.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="object" />
+	<meta property="og:title" content="Tutoriais, Dicas, Artigos - Henrique" />
+	<meta property="og:url" content="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" />
+	<meta property="og:site_name" content="Jonathas" />
+	<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://jonathasguerra.com.br/blog/#organization","name":"","url":"https://jonathasguerra.com.br/blog/","sameAs":[]},{"@type":"WebSite","@id":"https://jonathasguerra.com.br/blog/#website","url":"https://jonathasguerra.com.br/blog/","name":"Jonathas","publisher":{"@id":"https://jonathasguerra.com.br/blog/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://jonathasguerra.com.br/blog/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/#webpage","url":"https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/","inLanguage":"pt-BR","name":"Tutoriais, Dicas, Artigos, Videos PHP - Jonathas","isPartOf":{"@id":"https://jonathasguerra.com.br/blog/#website"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+	<link rel='dns-prefetch' href='//ws.sharethis.com' />
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+	<link rel='dns-prefetch' href='//s.w.org' />
+	<link rel="alternate" type="application/rss+xml" title="Feed para Jonathas &raquo;" href="https://jonathasguerra.com.br/blog/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Jonathas &raquo;" href="https://jonathasguerra.com.br/blog/comments/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Feed de categoria para Jonathas &raquo; PHP" href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/feed/" />
+	<script type="text/javascript">
+		window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/jonathasguerra.com.br\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+		!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+	</script>
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel='stylesheet' id='contact-form-7-css'  href='https://jonathasguerra.com.br/blog/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.3' type='text/css' media='all' />
+	<link rel='stylesheet' id='simple-share-buttons-adder-indie-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.9.10' type='text/css' media='all' />
+	<link rel='stylesheet' id='simple-share-buttons-adder-font-awesome-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.9.10' type='text/css' media='all' />
+	<link rel='stylesheet' id='normalize-css-css'  href='https://jonathasguerra.com.br/blog/wp-content/themes/buzzmag/css/normalize.css?ver=4.1.1' type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-css'  href='https://jonathasguerra.com.br/blog/wp-content/themes/buzzmag/css/font-awesome/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='buzzmag-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C400italic%2C700%2C700italic%7CRoboto%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='buzzmag-style-css'  href='https://jonathasguerra.com.br/blog/wp-content/themes/buzzmag/style.css?ver=4.9.10' type='text/css' media='all' />
+	<style id='buzzmag-style-inline-css' type='text/css'>
+		
+
+		::-moz-selection {
+			background-color: #afc601;
+			color: #ffffff;
+		}
+		::selection {
+			background-color: #afc601;
+			color: #ffffff;
+		}
+
+		body {
+			background-color: ;
+			color: ;
+		}
+
+		.single .post-content  { font-size: px; }
+		
+		#fl-top-bar .drawer-icon { display: block; }  #fl-top-bar { position: fixed; } 
+		h1,h2,h3,h4,h5,h6, #fl-top-bar .top-menu li a, .stick-category a, .fl-featured-area article .feature-category, .fl-loop-tabs a, span.category a, .fl-widget .menu li a, .fl-load-more, .fn, .fn a { font-weight : ; }
+
+		.post-header .title { font-size: 20px; }
+
+		.stick-category a, span.category a, .fl-picture .format-overlay, .single .tags .tag, .reply a, input[type='submit'], button, .woocommerce span.onsale, .woocommerce div.product form.cart .button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, #fl-sidebar .woocommerce #respond input#submit, #fl-sidebar .woocommerce a.button, #fl-sidebar .woocommerce button.button, #fl-sidebar .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { color: ; background-color: ; }
+		
+
+		#fl-top-bar { background-color: #ffffff; }
+
+		#fl-top-bar, #fl-top-bar a { color: #000000; }
+
+		.menu-icon span, .menu-icon span:before, .menu-icon span:after { background-color: #000000; }
+		
+		#fl-top-bar .top-menu li .sub-menu, #fl-top-bar .top-menu li.fl-megamenu .megamenu, .fl-drawer, .fl-drawer .fl-widget-title .title, #fl-drawer .fl-fwposts-widget .item-content .item-cell { background-color: ; }
+
+		#fl-top-bar .top-menu li .sub-menu li a, #fl-top-bar .top-menu li.fl-megamenu .megamenu-list li a, .fl-drawer, .fl-drawer a, .fl-drawer .fl-widget-title .title, .fl-drawer .fl-widget.widget_mc4wp_form_widget:before, .fl-drawer h1, .fl-drawer h2, .fl-drawer h3, .fl-drawer h4, .fl-drawer h5, .fl-drawer h6 { color: ; }
+
+		#fl-top-bar .top-menu li .sub-menu li a:hover { background-color: ; color: ; }
+		#fl-top-bar .top-menu li.fl-megamenu .megamenu .cats-list { background-color: ; }
+		#fl-top-bar .top-menu li.fl-megamenu .megamenu .cats-list .cat-link { color: ; }
+		#fl-top-bar .top-menu li.fl-megamenu .megamenu .cats-list .active:after { border-color: ; }
+
+		h1, h2, h3, h4, h5, h6,	blockquote, q, .title a, .single .tags a, .fl-page-links a, .fn, .fn a, .fl-author-socials a, .fl-load-more, .fl-loop-tabs a, .owl-theme .owl-controls .owl-nav div, .woocommerce ul.products li.product .price, .woocommerce ul.products li.product .button, .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce-MyAccount-navigation ul li a { color: ; }
+
+		.post-excerpt p, .fl-box p { color: ; }
+
+		.meta,.commentmetadata a, .fl-featured-area article .feature-meta, .fl-box span, #respond small { color: ; }
+
+		#fl-sidebar .fl-widget-title .title, #fl-sidebar .fl-widget.widget_mc4wp_form_widget:before { color: ; }
+
+		.fl-latest-featured .sticky-content .cell-inner, #fl-sidebar .fl-widget-title .title, .single .post-header, .page .fl-normal-page .post-header, .owl-theme .owl-controls .owl-nav div, #fl-sidebar .fl-fwposts-widget .item-content .item-cell { background-color: ; }
+
+		.owl-theme .owl-controls .owl-nav div:hover { color: ; background-color: ; }
+
+		footer { background-color: ; color: ;	}
+		footer a, footer .title a { color: ; }
+		footer a:hover, footer .title a:hover { color:  ; }
+
+		footer .fl-widget.widget_mc4wp_form_widget:before, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: ; }
+
+		#fl-footer-sidebar .fl-widget-title .title { color: ; background-color: ; }
+
+		#fl-footer-sidebar .fl-fwposts-widget .item-content .item-cell { background-color: ; }
+
+		a, blockquote:before, q:before,	#fl-top-bar a:hover, #fl-top-bar li.current-menu-item > a, .fl-drawer a:hover, .title a:hover, #fl-sidebar a:hover, .woocommerce .star-rating:before, .woocommerce .star-rating span, .woocommerce #review_form #respond p a:hover, #fl-top-bar .top-menu li.fl-megamenu .megamenu-list li a:hover { color: #afc601; }
+		
+		a:hover, #fl-sidebar, #fl-sidebar a { color: ; }
+
+		.stick-category a:hover, .fl-loop-tabs a:hover, .fl-loop-tabs a.active, span.category a:hover, .fl-socials .social-icons a:hover, .fl-trending-posts .fl-fwposts-widget .item:before, .fl-picture:hover .format-overlay, .fl-load-more:hover, .single .tags a:hover, .fl-page-links a:hover, .reply a:hover, input[type='submit']:hover, button:hover, .fl-author-socials a:hover, .overlay-search .searchform button:hover, .woocommerce ul.products li.product .button:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce div.product form.cart .button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, #fl-sidebar .woocommerce #respond input#submit:hover, #fl-sidebar .woocommerce a.button:hover, #fl-sidebar .woocommerce button.button:hover, #fl-sidebar .woocommerce input.button:hover, .woocommerce-MyAccount-navigation ul li a:hover, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, footer input[type='submit'], footer button, .fl-loop-posts article.sticky .category:before { background-color: #afc601; color: ; }
+
+		.fl-loop-tabs a.active:after { border-color: #afc601; }
+
+		
+	</style>
+	<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+	<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+	<script id='st_insights_js' type='text/javascript' src='https://ws.sharethis.com/button/st_insights.js?publisher=4d48b7c5-0ae3-43d4-bfbe-3ff8c17a8ae6&#038;product=simpleshare'></script>
+	<link rel='https://api.w.org/' href='https://jonathasguerra.com.br/blog/wp-json/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jonathasguerra.com.br/blog/xmlrpc.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://jonathasguerra.com.br/blog/wp-includes/wlwmanifest.xml" /> 
+	<meta name="generator" content="WordPress 4.9.10" />
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>    <script>
+
+		window.OneSignal = window.OneSignal || [];
+
+		OneSignal.push( function() {
+			OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+			OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+			OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+			OneSignal.setDefaultNotificationUrl("https://jonathasguerra.com.br/blog");
+			var oneSignal_options = {};
+			window._oneSignalInitOptions = oneSignal_options;
+
+			oneSignal_options['wordpress'] = true;
+			oneSignal_options['appId'] = '7abfbb42-2f58-4586-8274-da16f4e77895';
+			oneSignal_options['autoRegister'] = true;
+			oneSignal_options['welcomeNotification'] = { };
+			oneSignal_options['welcomeNotification']['title'] = "";
+			oneSignal_options['welcomeNotification']['message'] = "";
+			oneSignal_options['subdomainName'] = "https://joanthasguerra.onesignal.com";
+			oneSignal_options['promptOptions'] = { };
+			oneSignal_options['promptOptions']['acceptButtonText'] = 'Continuar';
+			oneSignal_options['promptOptions']['cancelButtonText'] = 'Não, obrigado';
+			oneSignal_options['notifyButton'] = { };
+			oneSignal_options['notifyButton']['enable'] = true;
+			oneSignal_options['notifyButton']['position'] = 'bottom-right';
+			oneSignal_options['notifyButton']['theme'] = 'inverse';
+			oneSignal_options['notifyButton']['size'] = 'medium';
+			oneSignal_options['notifyButton']['prenotify'] = true;
+			oneSignal_options['notifyButton']['showCredit'] = true;
+			oneSignal_options['notifyButton']['text'] = {};
+			oneSignal_options['notifyButton']['text']['message.prenotify'] = 'Clique para receber novidades';
+			oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Receber novidades';
+			oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Você receberá novidades';
+			OneSignal.init(window._oneSignalInitOptions);
+		});
+
+		function documentInitOneSignal() {
+			var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+			var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+			oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+		}
+
+		if (document.readyState === 'complete') {
+			documentInitOneSignal();
+		}
+		else {
+			window.addEventListener("load", function(event){
+				documentInitOneSignal();
+			});
+		}
+	</script>
+
+	<style type="text/css" id="wp-custom-css">
+			/*
+Você pode adicionar seu próprio CSS aqui.
+
+Clique no ícone de ajuda acima para saber mais.
+*/
+.fl-picture img {
+	width: 100%;
+	height: 200px;
+	display: inline-block;
+}		</style>
+
+</head>
+<body class="archive category category-php category-2">	
+
+	<header id="fl-top-bar" class="clearfix">
+		<div class="fl-container clearfix">
+			<div id="mobile-menu-icon" class="drawer-icon">
+				<button class="menu-icon">
+					<span>Menu</span>
+				</button>
+				<div class="drawer-icon-text">
+					<span>Menu</span>
+				</div>
+			</div>
+			<div id="top-logo" class="clearfix">			    
+				<h2><a href='https://jonathasguerra.com.br/blog/' title='Henrique' rel='home'>Henrique</a></h2>
+			</div>
+			<div class="top-menu">
+				<div class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-349" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-349"><a href="http://jonathasguerra.com.br/blog/">Home</a></li>
+					<li id="menu-item-327" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-327"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/">Desenvolvimento</a>
+						<ul class="sub-menu">
+							<li id="menu-item-328" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-328"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/android/">Android</a></li>
+							<li id="menu-item-329" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-329"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/cakephp/">CakePHP</a></li>
+							<li id="menu-item-330" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-330"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/frameworks-cms/">Frameworks / CMS</a></li>
+							<li id="menu-item-331" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-331"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/javascript/">JavaScript</a></li>
+							<li id="menu-item-332" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-332"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/magento/">Magento</a></li>
+							<li id="menu-item-333" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-333"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/">PHP</a></li>
+							<li id="menu-item-334" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-334"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/">WordPress</a></li>
+						</ul>
+					</li>
+					<li id="menu-item-335" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-335"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/">Design</a>
+						<ul class="sub-menu">
+							<li id="menu-item-336" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-336"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/css/">CSS</a></li>
+							<li id="menu-item-337" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-337"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/html/">HTML</a></li>
+							<li id="menu-item-338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-338"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/photoshop/">PhotoShop</a></li>
+						</ul>
+					</li>
+					<li id="menu-item-341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-341"><a href="https://jonathasguerra.com.br/blog/categoria/outros/">Outros</a>
+						<ul class="sub-menu">
+							<li id="menu-item-342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-342"><a href="https://jonathasguerra.com.br/blog/categoria/outros/filmes-e-series/">Filmes e Séries</a></li>
+							<li id="menu-item-340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-340"><a href="https://jonathasguerra.com.br/blog/categoria/inteligencia-artificial/">Inteligência Artificial</a></li>
+							<li id="menu-item-339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-339"><a href="https://jonathasguerra.com.br/blog/categoria/empreendedorismo/">Empreendedorismo</a></li>
+						</ul>
+					</li>
+				</ul></div>			</div>
+				<div class="search-icon">
+					<i class="fa fa-search"></i>
+					<i class="fa fa-times"></i>				
+				</div>
+				<div class="social-icons">
+					<ul>
+
+						<li class="facebook"><a href="https://facebook.com/jocaesa" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+						<li class="twitter"><a href="https://twitter.com/jonathasguerra" target="_blank"><i class="fa fa-twitter"></i></a></li>
+
+						<li class="gplus"><a href="https://plus.google.com/+jonathasguerra" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+
+						<li class="instagram"><a href="https://instagram.com/jonathasguerra" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+
+
+
+						
+						<li class="youtube"><a href="http://youtube.com/user/jocaesa" target="_blank"><i class="fa fa-youtube"></i></a></li>
+
+
+
+
+
+
+
+						
+						<li class="tumblr"><a href="https://jonathasguerra.tumblr.com" target="_blank"><i class="fa fa-tumblr"></i></a></li>
+
+						
+						<li class="mail"><a href="jocaesa@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+
+
+					</ul>			</div>
+				</div>
+			</header>
+
+			<div class="fl-drawer clearfix">
+				<div id="categories-2" class="fl-widget clearfix widget_categories"><div class="fl-widget-title"><h3 class="title">Categorias</h3></div>		<ul>
+					<li class="cat-item cat-item-5 current-cat-parent current-cat-ancestor"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" >Desenvolvimento</a>
+						<ul class='children'>
+							<li class="cat-item cat-item-95"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/android/" >Android</a>
+							</li>
+							<li class="cat-item cat-item-11"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/cakephp/" >CakePHP</a>
+							</li>
+							<li class="cat-item cat-item-9"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/frameworks-cms/" >Frameworks / CMS</a>
+							</li>
+							<li class="cat-item cat-item-140"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/ios-iphone/" >iOS (Iphone)</a>
+							</li>
+							<li class="cat-item cat-item-3"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/javascript/" >JavaScript</a>
+							</li>
+							<li class="cat-item cat-item-77"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/magento/" >Magento</a>
+							</li>
+							<li class="cat-item cat-item-2 current-cat"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" >PHP</a>
+							</li>
+							<li class="cat-item cat-item-10"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/" >WordPress</a>
+							</li>
+						</ul>
+					</li>
+					<li class="cat-item cat-item-6"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/" >Design / Implementação</a>
+						<ul class='children'>
+							<li class="cat-item cat-item-8"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/css/" >CSS</a>
+							</li>
+							<li class="cat-item cat-item-7"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/html/" >HTML</a>
+							</li>
+							<li class="cat-item cat-item-88"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/photoshop/" >PhotoShop</a>
+							</li>
+						</ul>
+					</li>
+					<li class="cat-item cat-item-65"><a href="https://jonathasguerra.com.br/blog/categoria/empreendedorismo/" >Empreendedorismo</a>
+					</li>
+					<li class="cat-item cat-item-124"><a href="https://jonathasguerra.com.br/blog/categoria/inteligencia-artificial/" >Inteligência Artificial</a>
+					</li>
+					<li class="cat-item cat-item-242"><a href="https://jonathasguerra.com.br/blog/categoria/marketing/" >Marketing</a>
+					</li>
+					<li class="cat-item cat-item-113"><a href="https://jonathasguerra.com.br/blog/categoria/outros/" >Outros</a>
+						<ul class='children'>
+							<li class="cat-item cat-item-114"><a href="https://jonathasguerra.com.br/blog/categoria/outros/filmes-e-series/" >Filmes e Séries</a>
+							</li>
+							<li class="cat-item cat-item-178"><a href="https://jonathasguerra.com.br/blog/categoria/outros/futuro/" >Futuro</a>
+							</li>
+						</ul>
+					</li>
+					<li class="cat-item cat-item-257"><a href="https://jonathasguerra.com.br/blog/categoria/seja-um-programador-foda/" >Seja um Programador FODA</a>
+					</li>
+					<li class="cat-item cat-item-1"><a href="https://jonathasguerra.com.br/blog/categoria/sem-categoria/" >Sem categoria</a>
+					</li>
+				</ul>
+			</div><div id="tag_cloud-2" class="fl-widget clearfix widget_tag_cloud"><div class="fl-widget-title"></div></div>
+		</div>	</div>
+
+		<div class="push-overlay"></div>
+
+		<div id="fl-search-overlay">
+			<div class="overlay-table">
+				<div class="overlay-cell">
+					<div class="fl-container clearfix">
+						<div class="overlay-search">
+							<form method="get" class="searchform" action="https://jonathasguerra.com.br/blog/">
+								<input type="text" value placeholder="Search..." name="s" />
+								<button type="submit" id="searchsubmit">
+									<span>Search</span>
+								</button>
+							</form>					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<!-- Main Content div -->
+			<div id="fl-main-content">
+				<div id="content">
+					<div class="fl-container clearfix">
+						<div class="fl-box clearfix">
+							<h1 class="title">
+							PHP		    </h1>
+						</div>
+					</div>
+					
+					
+					<div class="fl-container clearfix">
+						<div id="fl-post-container" >
+							<div id="grid-2-sidebar" class="grid clearfix">
+								<div id="fl-latest-posts" class="fl-loop-section clearfix">
+									<div class="fl-loop-posts clearfix">
+										<article id="post-741" class="clearfix post-741 post type-post status-publish format-standard has-post-thumbnail hentry category-ios-iphone category-php tag-aplicativo-de-roteamento tag-desenvolvimento-de-aplicativos tag-maps-ios tag-missing-routing-app tag-missing-routing-app-coverage-file tag-routing-app">
+											<div class="fl-picture">
+												<a href="https://jonathasguerra.com.br/blog/criando-um-arquivo-de-cobertura-de-aplicativo-de-roteamento/">
+													<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2019/12/Captura-de-Tela-2019-12-16-às-17.55.02-480x300.png" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+												</div>
+												<div class="fl-post-content">
+													<div class="post-header clearfix">
+														<div class="post-meta">
+															<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/ios-iphone/" rel="category tag">iOS (Iphone)</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+															<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+															<span class="meta"><i class="fa fa-clock-o"></i>4 semanas ago</span>
+															<a href="https://jonathasguerra.com.br/blog/criando-um-arquivo-de-cobertura-de-aplicativo-de-roteamento/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>31</span>
+														</div>
+														<h2 class="title"><a href="https://jonathasguerra.com.br/blog/criando-um-arquivo-de-cobertura-de-aplicativo-de-roteamento/">Criando um arquivo de cobertura de aplicativo de roteamento</a></h2>    
+													</div>
+												</div>
+											</article>
+											<article id="post-621" class="clearfix post-621 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-frameworks-cms category-php tag-curso tag-curso-php tag-framework tag-laravel">
+												<div class="fl-picture">
+													<a href="https://jonathasguerra.com.br/blog/curso-de-laravel-blog-com-acl-aprenda-a-criar-o-seu-proprio-gerenciador-de-conteudos/">
+														<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2019/04/curso-curso-de-laravel-451-480x300.png" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+													</div>
+													<div class="fl-post-content">
+														<div class="post-header clearfix">
+															<div class="post-meta">
+																<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/frameworks-cms/" rel="category tag">Frameworks / CMS</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																<span class="meta"><i class="fa fa-clock-o"></i>9 meses ago</span>
+																<a href="https://jonathasguerra.com.br/blog/curso-de-laravel-blog-com-acl-aprenda-a-criar-o-seu-proprio-gerenciador-de-conteudos/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>740</span>
+															</div>
+															<h2 class="title"><a href="https://jonathasguerra.com.br/blog/curso-de-laravel-blog-com-acl-aprenda-a-criar-o-seu-proprio-gerenciador-de-conteudos/">Curso de Laravel Blog com ACL &#8211; Aprenda a criar o seu próprio gerenciador de conteúdos</a></h2>    
+														</div>
+													</div>
+												</article>
+												<article id="post-617" class="clearfix post-617 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-curso-barato tag-curso-online tag-curso-php tag-php-orientado-a-objeto">
+													<div class="fl-picture">
+														<a href="https://jonathasguerra.com.br/blog/aprenda-php-orientado-a-objetivos-do-zero-de-forma-facil-e-pratica-2019/">
+															<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2019/03/php-480x300.jpeg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+														</div>
+														<div class="fl-post-content">
+															<div class="post-header clearfix">
+																<div class="post-meta">
+																	<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																	<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																	<span class="meta"><i class="fa fa-clock-o"></i>10 meses ago</span>
+																	<a href="https://jonathasguerra.com.br/blog/aprenda-php-orientado-a-objetivos-do-zero-de-forma-facil-e-pratica-2019/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>454</span>
+																</div>
+																<h2 class="title"><a href="https://jonathasguerra.com.br/blog/aprenda-php-orientado-a-objetivos-do-zero-de-forma-facil-e-pratica-2019/">Aprenda PHP Orientado a Objetivos do Zero  de forma fácil e prática 2019</a></h2>    
+															</div>
+														</div>
+													</article>
+													<article id="post-535" class="clearfix post-535 post type-post status-publish format-standard has-post-thumbnail hentry category-php">
+														<div class="fl-picture">
+															<a href="https://jonathasguerra.com.br/blog/qual-linguagem-de-programacao-aprender/">
+																<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2018/08/Captura-de-Tela-2018-08-30-às-13.59.18-480x300.png" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+															</div>
+															<div class="fl-post-content">
+																<div class="post-header clearfix">
+																	<div class="post-meta">
+																		<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																		<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																		<span class="meta"><i class="fa fa-clock-o"></i>1 ano ago</span>
+																		<a href="https://jonathasguerra.com.br/blog/qual-linguagem-de-programacao-aprender/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>1.7 K</span>
+																	</div>
+																	<h2 class="title"><a href="https://jonathasguerra.com.br/blog/qual-linguagem-de-programacao-aprender/">Qual linguagem de programação aprender?</a></h2>    
+																</div>
+															</div>
+														</article>
+														<article id="post-409" class="clearfix post-409 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-html category-javascript category-php tag-camera tag-camera-html5 tag-html5 tag-php tag-upload tag-webcam">
+															<div class="fl-picture">
+																<a href="https://jonathasguerra.com.br/blog/acessando-camera-do-celular-tirar-foto-e-fazer-upload-com-php-e-html5/">
+																	<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2017/06/webcam-480x300.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+																</div>
+																<div class="fl-post-content">
+																	<div class="post-header clearfix">
+																		<div class="post-meta">
+																			<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/html/" rel="category tag">HTML</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/javascript/" rel="category tag">JavaScript</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																			<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																			<span class="meta"><i class="fa fa-clock-o"></i>3 anos ago</span>
+																			<a href="https://jonathasguerra.com.br/blog/acessando-camera-do-celular-tirar-foto-e-fazer-upload-com-php-e-html5/#comments"><span class="meta"><i class="fa fa-comment-o"></i>24</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>10.3 K</span>
+																		</div>
+																		<h2 class="title"><a href="https://jonathasguerra.com.br/blog/acessando-camera-do-celular-tirar-foto-e-fazer-upload-com-php-e-html5/">Acessando Câmera do Celular ou Webcam, tirando foto e fazendo upload com JavaScript, PHP e HTML5</a></h2>    
+																	</div>
+																</div>
+															</article>
+															<article id="post-403" class="clearfix post-403 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php category-wordpress tag-php tag-php-7 tag-php-7-1 tag-wordpress">
+																<div class="fl-picture">
+																	<a href="https://jonathasguerra.com.br/blog/impactos-php-7-1-no-wordpress/">
+																		<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2017/03/wordpress-php71-480x300.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+																	</div>
+																	<div class="fl-post-content">
+																		<div class="post-header clearfix">
+																			<div class="post-meta">
+																				<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/" rel="category tag">WordPress</a></span>
+																				<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																				<span class="meta"><i class="fa fa-clock-o"></i>3 anos ago</span>
+																				<a href="https://jonathasguerra.com.br/blog/impactos-php-7-1-no-wordpress/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>17.8 K</span>
+																			</div>
+																			<h2 class="title"><a href="https://jonathasguerra.com.br/blog/impactos-php-7-1-no-wordpress/">Impactos do PHP 7.1 no WordPress</a></h2>    
+																		</div>
+																	</div>
+																</article>
+																<article id="post-391" class="clearfix post-391 post type-post status-publish format-video has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-curso tag-free tag-gratis tag-iniciantes tag-php tag-php-basico post_format-post-format-video">
+																	<div class="fl-picture">
+																		<a href="https://jonathasguerra.com.br/blog/curso-em-video-aulas-de-php-para-iniciantes/">
+																			<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2017/02/php_curso-480x300.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+																			<div class="format-overlay"><i class="fa fa-play"></i></div>
+																		</div>
+																		<div class="fl-post-content">
+																			<div class="post-header clearfix">
+																				<div class="post-meta">
+																					<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																					<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																					<span class="meta"><i class="fa fa-clock-o"></i>3 anos ago</span>
+																					<a href="https://jonathasguerra.com.br/blog/curso-em-video-aulas-de-php-para-iniciantes/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>5.2 K</span>
+																				</div>
+																				<h2 class="title"><a href="https://jonathasguerra.com.br/blog/curso-em-video-aulas-de-php-para-iniciantes/">Curso em Video Aulas de PHP para Iniciantes</a></h2>    
+																			</div>
+																		</div>
+																	</article>
+																	<article id="post-359" class="clearfix post-359 post type-post status-publish format-standard has-post-thumbnail hentry category-php category-wordpress tag-free tag-gratis tag-php tag-plugins tag-wordpress">
+																		<div class="fl-picture">
+																			<a href="https://jonathasguerra.com.br/blog/top-15-melhores-plugins-gratis-para-wordpress-em-2016-2017/">
+																				<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2017/01/wordpress-plugins-480x300.png" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+																			</div>
+																			<div class="fl-post-content">
+																				<div class="post-header clearfix">
+																					<div class="post-meta">
+																						<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/" rel="category tag">WordPress</a></span>
+																						<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																						<span class="meta"><i class="fa fa-clock-o"></i>3 anos ago</span>
+																						<a href="https://jonathasguerra.com.br/blog/top-15-melhores-plugins-gratis-para-wordpress-em-2016-2017/#comments"><span class="meta"><i class="fa fa-comment-o"></i>2</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>5.9 K</span>
+																					</div>
+																					<h2 class="title"><a href="https://jonathasguerra.com.br/blog/top-15-melhores-plugins-gratis-para-wordpress-em-2016-2017/">Top 15 melhores plugins grátis para WordPress em 2016/2017</a></h2>    
+																				</div>
+																			</div>
+																		</article>
+																		<article id="post-296" class="clearfix post-296 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-frameworks-cms category-php category-wordpress tag-blindado tag-php tag-plugins tag-proteger-wp tag-seguranca tag-wordpress tag-wp">
+																			<div class="fl-picture">
+																				<a href="https://jonathasguerra.com.br/blog/trio-de-plugins-para-melhorar-seguranca-do-wordpress/">
+																					<img width="480" height="264" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2016/11/segruança_wordpress_proteger_wordpress.png" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2016/11/segruança_wordpress_proteger_wordpress.png 1948w, https://jonathasguerra.com.br/blog/wp-content/uploads/2016/11/segruança_wordpress_proteger_wordpress-300x165.png 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2016/11/segruança_wordpress_proteger_wordpress-768x423.png 768w, https://jonathasguerra.com.br/blog/wp-content/uploads/2016/11/segruança_wordpress_proteger_wordpress-1024x564.png 1024w" sizes="(max-width: 480px) 100vw, 480px" />                    </a>
+																				</div>
+																				<div class="fl-post-content">
+																					<div class="post-header clearfix">
+																						<div class="post-meta">
+																							<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/frameworks-cms/" rel="category tag">Frameworks / CMS</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/" rel="category tag">WordPress</a></span>
+																							<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																							<span class="meta"><i class="fa fa-clock-o"></i>3 anos ago</span>
+																							<a href="https://jonathasguerra.com.br/blog/trio-de-plugins-para-melhorar-seguranca-do-wordpress/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>3.9 K</span>
+																						</div>
+																						<h2 class="title"><a href="https://jonathasguerra.com.br/blog/trio-de-plugins-para-melhorar-seguranca-do-wordpress/">Trio de Plugins para melhorar a Segurança do WordPress</a></h2>    
+																					</div>
+																				</div>
+																			</article>
+																			<article id="post-168" class="clearfix post-168 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-magento category-php tag-dicas-magento tag-magento tag-nocoes-basicas-magento tag-php tag-tema-magento">
+																				<div class="fl-picture">
+																					<a href="https://jonathasguerra.com.br/blog/coisas-que-todos-precisam-saber-sobre-temas-do-magento/">
+																						<img width="480" height="244" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/magento.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/magento.jpg 1154w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/magento-300x153.jpg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/magento-1024x521.jpg 1024w" sizes="(max-width: 480px) 100vw, 480px" />                    </a>
+																					</div>
+																					<div class="fl-post-content">
+																						<div class="post-header clearfix">
+																							<div class="post-meta">
+																								<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/magento/" rel="category tag">Magento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																								<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																								<span class="meta"><i class="fa fa-clock-o"></i>4 anos ago</span>
+																								<a href="https://jonathasguerra.com.br/blog/coisas-que-todos-precisam-saber-sobre-temas-do-magento/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>2.1 K</span>
+																							</div>
+																							<h2 class="title"><a href="https://jonathasguerra.com.br/blog/coisas-que-todos-precisam-saber-sobre-temas-do-magento/">Coisas que todos precisam saber sobre temas do Magento.</a></h2>    
+																						</div>
+																					</div>
+																				</article>
+																				<article id="post-151" class="clearfix post-151 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-classe-imagens tag-face-detect-php tag-imagens tag-itendificar-face-php tag-reconhecer-rosto-php tag-reconhecimento-facial tag-recortar-rosto-php">
+																					<div class="fl-picture">
+																						<a href="https://jonathasguerra.com.br/blog/reconhecimento-facial-com-php-identificando-rosto-em-imagem-e-cortando/">
+																							<img width="480" height="262" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/face-recognition-php.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/face-recognition-php.jpg 3300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/face-recognition-php-300x164.jpg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/face-recognition-php-1024x559.jpg 1024w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/10/face-recognition-php-750x410.jpg 750w" sizes="(max-width: 480px) 100vw, 480px" />                    </a>
+																						</div>
+																						<div class="fl-post-content">
+																							<div class="post-header clearfix">
+																								<div class="post-meta">
+																									<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																									<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																									<span class="meta"><i class="fa fa-clock-o"></i>4 anos ago</span>
+																									<a href="https://jonathasguerra.com.br/blog/reconhecimento-facial-com-php-identificando-rosto-em-imagem-e-cortando/#comments"><span class="meta"><i class="fa fa-comment-o"></i>28</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>32 K</span>
+																								</div>
+																								<h2 class="title"><a href="https://jonathasguerra.com.br/blog/reconhecimento-facial-com-php-identificando-rosto-em-imagem-e-cortando/">Reconhecimento Facial com PHP, identificando rosto em imagem e cortando</a></h2>    
+																							</div>
+																						</div>
+																					</article>
+																					<article id="post-110" class="clearfix post-110 post type-post status-publish format-standard has-post-thumbnail hentry category-css category-html category-javascript category-php category-wordpress">
+																						<div class="fl-picture">
+																							<a href="https://jonathasguerra.com.br/blog/ferramentas-servicos-indispensaveis-para-um-desenvolvedor-web/">
+																								<img width="454" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/IMG_20150614_211023741.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/IMG_20150614_211023741.jpg 1089w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/IMG_20150614_211023741-300x198.jpg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/IMG_20150614_211023741-1024x677.jpg 1024w" sizes="(max-width: 454px) 100vw, 454px" />                    </a>
+																							</div>
+																							<div class="fl-post-content">
+																								<div class="post-header clearfix">
+																									<div class="post-meta">
+																										<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/css/" rel="category tag">CSS</a> <a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/html/" rel="category tag">HTML</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/javascript/" rel="category tag">JavaScript</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/" rel="category tag">WordPress</a></span>
+																										<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																										<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																										<a href="https://jonathasguerra.com.br/blog/ferramentas-servicos-indispensaveis-para-um-desenvolvedor-web/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>11.7 K</span>
+																									</div>
+																									<h2 class="title"><a href="https://jonathasguerra.com.br/blog/ferramentas-servicos-indispensaveis-para-um-desenvolvedor-web/">Ferramentas / Serviços indispensáveis para um desenvolvedor web</a></h2>    
+																								</div>
+																							</div>
+																						</article>
+																						<article id="post-105" class="clearfix post-105 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-features tag-migrar-php tag-mudancas tag-mvc tag-novidades tag-php6 tag-php7">
+																							<div class="fl-picture">
+																								<a href="https://jonathasguerra.com.br/blog/principais-mudancas-no-php-7/">
+																									<img width="480" height="286" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/php7.jpeg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/php7.jpeg 1033w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/php7-300x179.jpeg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/06/php7-1024x610.jpeg 1024w" sizes="(max-width: 480px) 100vw, 480px" />                    </a>
+																								</div>
+																								<div class="fl-post-content">
+																									<div class="post-header clearfix">
+																										<div class="post-meta">
+																											<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																											<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																											<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																											<a href="https://jonathasguerra.com.br/blog/principais-mudancas-no-php-7/#comments"><span class="meta"><i class="fa fa-comment-o"></i>2</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>4.1 K</span>
+																										</div>
+																										<h2 class="title"><a href="https://jonathasguerra.com.br/blog/principais-mudancas-no-php-7/">Principais Mudanças no PHP 7</a></h2>    
+																									</div>
+																								</div>
+																							</article>
+																							<article id="post-99" class="clearfix post-99 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-classe-imagens tag-fotos tag-fotos-php tag-funcao-imagens-php tag-imagens tag-imagens-php tag-manipulacao-de-fotos tag-manipulacao-de-imagens tag-php">
+																								<div class="fl-picture">
+																									<a href="https://jonathasguerra.com.br/blog/upload-e-redimensionamento-de-imagens-com-php/">
+																										<img width="480" height="227" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/05/Captura-de-Tela-2015-05-25-às-04.29.36.png" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/05/Captura-de-Tela-2015-05-25-às-04.29.36.png 1184w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/05/Captura-de-Tela-2015-05-25-às-04.29.36-300x142.png 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/05/Captura-de-Tela-2015-05-25-às-04.29.36-1024x484.png 1024w" sizes="(max-width: 480px) 100vw, 480px" />                    </a>
+																									</div>
+																									<div class="fl-post-content">
+																										<div class="post-header clearfix">
+																											<div class="post-meta">
+																												<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																												<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																												<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																												<a href="https://jonathasguerra.com.br/blog/upload-e-redimensionamento-de-imagens-com-php/#comments"><span class="meta"><i class="fa fa-comment-o"></i>2</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>4.2 K</span>
+																											</div>
+																											<h2 class="title"><a href="https://jonathasguerra.com.br/blog/upload-e-redimensionamento-de-imagens-com-php/">Upload e redimensionamento de imagens com PHP</a></h2>    
+																										</div>
+																									</div>
+																								</article>
+																								<article id="post-66" class="clearfix post-66 post type-post status-publish format-standard has-post-thumbnail hentry category-css category-desenvolvimento-programacao category-design-implementacao category-frameworks-cms category-html category-javascript category-php category-wordpress tag-desenvolvedor-web tag-dicas tag-ferramentas tag-programador tag-startup tag-uteis">
+																									<div class="fl-picture">
+																										<a href="https://jonathasguerra.com.br/blog/servicos-gratuitos-e-sensacionais-para-desenvolvedores-empreendedores-e-startup/">
+																											<img width="429" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/03/Tec.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/03/Tec.jpg 1144w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/03/Tec-300x210.jpg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/03/Tec-1024x716.jpg 1024w" sizes="(max-width: 429px) 100vw, 429px" />                    </a>
+																										</div>
+																										<div class="fl-post-content">
+																											<div class="post-header clearfix">
+																												<div class="post-meta">
+																													<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/css/" rel="category tag">CSS</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/" rel="category tag">Design / Implementação</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/frameworks-cms/" rel="category tag">Frameworks / CMS</a> <a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/html/" rel="category tag">HTML</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/javascript/" rel="category tag">JavaScript</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/" rel="category tag">WordPress</a></span>
+																													<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																													<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																													<a href="https://jonathasguerra.com.br/blog/servicos-gratuitos-e-sensacionais-para-desenvolvedores-empreendedores-e-startup/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>20.7 K</span>
+																												</div>
+																												<h2 class="title"><a href="https://jonathasguerra.com.br/blog/servicos-gratuitos-e-sensacionais-para-desenvolvedores-empreendedores-e-startup/">Serviços gratuitos e sensacionais para Desenvolvedores, Empreendedores e Startup</a></h2>    
+																											</div>
+																										</div>
+																									</article>
+																									<article id="post-61" class="clearfix post-61 post type-post status-publish format-standard has-post-thumbnail hentry category-cakephp category-desenvolvimento-programacao category-frameworks-cms category-php tag-cakephp tag-mvc tag-oo tag-orientacao-de-objetos tag-php tag-php-orientado">
+																										<div class="fl-picture">
+																											<a href="https://jonathasguerra.com.br/blog/introducao-ao-mvc-php/">
+																												<img width="480" height="203" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/moj-php-mvc-framework-wide.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/moj-php-mvc-framework-wide.jpg 3264w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/moj-php-mvc-framework-wide-300x127.jpg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/moj-php-mvc-framework-wide-1024x433.jpg 1024w" sizes="(max-width: 480px) 100vw, 480px" />                    </a>
+																											</div>
+																											<div class="fl-post-content">
+																												<div class="post-header clearfix">
+																													<div class="post-meta">
+																														<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/cakephp/" rel="category tag">CakePHP</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/frameworks-cms/" rel="category tag">Frameworks / CMS</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																														<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																														<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																														<a href="https://jonathasguerra.com.br/blog/introducao-ao-mvc-php/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>3 K</span>
+																													</div>
+																													<h2 class="title"><a href="https://jonathasguerra.com.br/blog/introducao-ao-mvc-php/">Introdução ao MVC PHP</a></h2>    
+																												</div>
+																											</div>
+																										</article>
+																										<article id="post-53" class="clearfix post-53 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-melhores tag-melhores-praticas tag-php tag-php-iniciante tag-praticas tag-programacao">
+																											<div class="fl-picture">
+																												<a href="https://jonathasguerra.com.br/blog/php-10-melhores-praticas-pra-um-iniciante/">
+																													<img width="400" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/PHP_Weapons_by_rubenred.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/PHP_Weapons_by_rubenred.jpg 1024w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/PHP_Weapons_by_rubenred-300x225.jpg 300w" sizes="(max-width: 400px) 100vw, 400px" />                    </a>
+																												</div>
+																												<div class="fl-post-content">
+																													<div class="post-header clearfix">
+																														<div class="post-meta">
+																															<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																															<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																															<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																															<a href="https://jonathasguerra.com.br/blog/php-10-melhores-praticas-pra-um-iniciante/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>2.9 K</span>
+																														</div>
+																														<h2 class="title"><a href="https://jonathasguerra.com.br/blog/php-10-melhores-praticas-pra-um-iniciante/">PHP: As 10 melhores práticas pra um iniciante</a></h2>    
+																													</div>
+																												</div>
+																											</article>
+																											<article id="post-51" class="clearfix post-51 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-canvas tag-m2brimagem tag-php tag-phpcanvas tag-tratamento-de-imagens">
+																												<div class="fl-picture">
+																													<a href="https://jonathasguerra.com.br/blog/canvas-nova-classe-para-manipulacao-e-redimensionamento-de-imagens-com-php/">
+																														<img width="450" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/tramway.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/tramway.jpg 4252w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/tramway-300x200.jpg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/tramway-1024x682.jpg 1024w" sizes="(max-width: 450px) 100vw, 450px" />                    </a>
+																													</div>
+																													<div class="fl-post-content">
+																														<div class="post-header clearfix">
+																															<div class="post-meta">
+																																<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																																<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																																<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																																<a href="https://jonathasguerra.com.br/blog/canvas-nova-classe-para-manipulacao-e-redimensionamento-de-imagens-com-php/#comments"><span class="meta"><i class="fa fa-comment-o"></i>3</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>4.1 K</span>
+																															</div>
+																															<h2 class="title"><a href="https://jonathasguerra.com.br/blog/canvas-nova-classe-para-manipulacao-e-redimensionamento-de-imagens-com-php/">Canvas: classe para manipulação e redimensionamento de imagens com PHP</a></h2>    
+																														</div>
+																													</div>
+																												</article>
+																												<article id="post-23" class="clearfix post-23 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php tag-email tag-enviar-email tag-php tag-via-php">
+																													<div class="fl-picture">
+																														<a href="https://jonathasguerra.com.br/blog/enviar-e-mails-pelo-php-usando-o-phpmailer/">
+																															<img width="334" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/email-1403475.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/email-1403475.jpg 1130w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/email-1403475-300x269.jpg 300w, https://jonathasguerra.com.br/blog/wp-content/uploads/2015/02/email-1403475-1024x920.jpg 1024w" sizes="(max-width: 334px) 100vw, 334px" />                    </a>
+																														</div>
+																														<div class="fl-post-content">
+																															<div class="post-header clearfix">
+																																<div class="post-meta">
+																																	<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																																	<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																																	<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																																	<a href="https://jonathasguerra.com.br/blog/enviar-e-mails-pelo-php-usando-o-phpmailer/#comments"><span class="meta"><i class="fa fa-comment-o"></i>12</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>28.1 K</span>
+																																</div>
+																																<h2 class="title"><a href="https://jonathasguerra.com.br/blog/enviar-e-mails-pelo-php-usando-o-phpmailer/">Enviar e-mails pelo PHP usando o PHPMailer</a></h2>    
+																															</div>
+																														</div>
+																													</article>
+																													<article id="post-20" class="clearfix post-20 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-javascript category-php">
+																														<div class="fl-picture">
+																															<a href="https://jonathasguerra.com.br/blog/jquery-datatable-configurando-e-utilizando-o-plugin-em-php/">
+																																<img width="353" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2014/11/datatables-my-table.png" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" srcset="https://jonathasguerra.com.br/blog/wp-content/uploads/2014/11/datatables-my-table.png 981w, https://jonathasguerra.com.br/blog/wp-content/uploads/2014/11/datatables-my-table-300x255.png 300w" sizes="(max-width: 353px) 100vw, 353px" />                    </a>
+																															</div>
+																															<div class="fl-post-content">
+																																<div class="post-header clearfix">
+																																	<div class="post-meta">
+																																		<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/javascript/" rel="category tag">JavaScript</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																																		<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																																		<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																																		<a href="https://jonathasguerra.com.br/blog/jquery-datatable-configurando-e-utilizando-o-plugin-em-php/#respond"></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>2.5 K</span>
+																																	</div>
+																																	<h2 class="title"><a href="https://jonathasguerra.com.br/blog/jquery-datatable-configurando-e-utilizando-o-plugin-em-php/">jQuery Datatable: Configurando e utilizando o plugin em PHP</a></h2>    
+																																</div>
+																															</div>
+																														</article>
+																														<article id="post-9" class="clearfix post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-desenvolvimento-programacao category-php">
+																															<div class="fl-picture">
+																																<a href="https://jonathasguerra.com.br/blog/removendo-acentos-de-uma-string-urls-amigaveis/">
+																																	<img width="480" height="300" src="https://jonathasguerra.com.br/blog/wp-content/uploads/2014/11/url-amigavel-link-amigavel-480x300.jpg" class="attachment-buzzmag_medium size-buzzmag_medium wp-post-image" alt="" />                    </a>
+																																</div>
+																																<div class="fl-post-content">
+																																	<div class="post-header clearfix">
+																																		<div class="post-meta">
+																																			<span class="category"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" rel="category tag">Desenvolvimento</a> <a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" rel="category tag">PHP</a></span>
+																																			<span class="meta"><i class="fa fa-user-o"></i><a href="https://jonathasguerra.com.br/blog/author/joca/" title="Posts de Jonathas Guerra" rel="author">Jonathas Guerra</a></span>
+																																			<span class="meta"><i class="fa fa-clock-o"></i>5 anos ago</span>
+																																			<a href="https://jonathasguerra.com.br/blog/removendo-acentos-de-uma-string-urls-amigaveis/#comments"><span class="meta"><i class="fa fa-comment-o"></i>2</span></a>                                                                                    <span class="meta"><i class="fa fa-eye"></i>3.1 K</span>
+																																		</div>
+																																		<h2 class="title"><a href="https://jonathasguerra.com.br/blog/removendo-acentos-de-uma-string-urls-amigaveis/">Removendo acentos de uma string – URLs amigáveis</a></h2>    
+																																	</div>
+																																</div>
+																															</article>
+																														</div>    
+																														<a href="#" class="fl-load-more"><i class="fa fa-refresh"></i>Load More Posts</a>
+																														<div class="fl-navigation clearfix">
+																															<div class="newer"></div>
+																															<div class="older"></div>
+																														</div>
+																													</div>				</div>
+																												</div>
+																												<aside id="fl-sidebar" class="fl-right">
+																													<div id="categories-3" class="fl-widget clearfix widget_categories"><div class="fl-widget-title"><h3 class="title">Categorias</h3></div>		<ul>
+																														<li class="cat-item cat-item-5 current-cat-parent current-cat-ancestor"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/" >Desenvolvimento</a> (44)
+																															<ul class='children'>
+																																<li class="cat-item cat-item-95"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/android/" >Android</a> (3)
+																																</li>
+																																<li class="cat-item cat-item-11"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/cakephp/" >CakePHP</a> (1)
+																																</li>
+																																<li class="cat-item cat-item-9"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/frameworks-cms/" >Frameworks / CMS</a> (8)
+																																</li>
+																																<li class="cat-item cat-item-140"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/ios-iphone/" >iOS (Iphone)</a> (4)
+																																</li>
+																																<li class="cat-item cat-item-3"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/javascript/" >JavaScript</a> (6)
+																																</li>
+																																<li class="cat-item cat-item-77"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/magento/" >Magento</a> (1)
+																																</li>
+																																<li class="cat-item cat-item-2 current-cat"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/php/" >PHP</a> (21)
+																																</li>
+																																<li class="cat-item cat-item-10"><a href="https://jonathasguerra.com.br/blog/categoria/desenvolvimento-programacao/wordpress/" >WordPress</a> (7)
+																																</li>
+																															</ul>
+																														</li>
+																														<li class="cat-item cat-item-6"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/" >Design / Implementação</a> (16)
+																															<ul class='children'>
+																																<li class="cat-item cat-item-8"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/css/" >CSS</a> (3)
+																																</li>
+																																<li class="cat-item cat-item-7"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/html/" >HTML</a> (7)
+																																</li>
+																																<li class="cat-item cat-item-88"><a href="https://jonathasguerra.com.br/blog/categoria/design-implementacao/photoshop/" >PhotoShop</a> (1)
+																																</li>
+																															</ul>
+																														</li>
+																														<li class="cat-item cat-item-65"><a href="https://jonathasguerra.com.br/blog/categoria/empreendedorismo/" >Empreendedorismo</a> (19)
+																														</li>
+																														<li class="cat-item cat-item-124"><a href="https://jonathasguerra.com.br/blog/categoria/inteligencia-artificial/" >Inteligência Artificial</a> (6)
+																														</li>
+																														<li class="cat-item cat-item-242"><a href="https://jonathasguerra.com.br/blog/categoria/marketing/" >Marketing</a> (1)
+																														</li>
+																														<li class="cat-item cat-item-113"><a href="https://jonathasguerra.com.br/blog/categoria/outros/" >Outros</a> (13)
+																															<ul class='children'>
+																																<li class="cat-item cat-item-114"><a href="https://jonathasguerra.com.br/blog/categoria/outros/filmes-e-series/" >Filmes e Séries</a> (3)
+																																</li>
+																																<li class="cat-item cat-item-178"><a href="https://jonathasguerra.com.br/blog/categoria/outros/futuro/" >Futuro</a> (5)
+																																</li>
+																															</ul>
+																														</li>
+																														<li class="cat-item cat-item-257"><a href="https://jonathasguerra.com.br/blog/categoria/seja-um-programador-foda/" >Seja um Programador FODA</a> (4)
+																														</li>
+																														<li class="cat-item cat-item-1"><a href="https://jonathasguerra.com.br/blog/categoria/sem-categoria/" >Sem categoria</a> (4)
+																														</li>
+																													</ul>
+																												</div>	</aside>
+																											</div>
+																										</div>
+																										<!-- Close Main Content div -->
+																									</div>
+																									<!-- Footer Ad Area -->
+																									<div class="fl-container clearfix">
+																										<div class="footer-ad">
+																											<span class="fl-ad-title">&ndash; Avertisement &ndash;</span>
+																											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+																											<!-- Blog Jonathas Footer -->
+																											<ins class="adsbygoogle"
+																											style="display:inline-block;width:728px;height:90px"
+																											data-ad-client="ca-pub-0675090466176858"
+																											data-ad-slot="9378518124"></ins>
+																											<script>
+																												(adsbygoogle = window.adsbygoogle || []).push({});
+																											</script>        </div>
+																										</div>
+																										
+																										<!-- Footer -->
+																										<footer class="clearfix">
+																											<div id="fl-footer-sidebar" class="clearfix">
+																												<div class="fl-container clearfix">
+																													<div class="widget-column">
+																														<div id="buzzmag_about-2" class="fl-widget clearfix fl-about"><div class="fl-widget-title"><h3 class="title">Jonathas</h3></div><div>
+																															<img src="http://jonathasguerra.com.br/blog/wp-content/uploads/2016/10/14073210_186234801796974_959358063_n-e1476305595437.jpg" alt="Jonathas">
+
+																															<div>Desenvolvedor de Aplicativos<br>Desenvolvedor Freelancer<br>
+																																Analista de Sistemas<br>
+																																Programador PHP<br>
+																																<a href="https://www.jonathasguerra.com.br" target="_blank">JonathasGuerra.com.br</a><br>
+																																<a href="https://www.guerrabyte.com.br" target="_blank">GuerraByte.com.br</a></div></div></div><div id="custom_html-3" class="widget_text fl-widget clearfix widget_custom_html"><div class="textwidget custom-html-widget"><!-- Facebook Pixel Code -->
+																																	<script>
+																																		!function(f,b,e,v,n,t,s)
+																																		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+																																			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+																																			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+																																			n.queue=[];t=b.createElement(e);t.async=!0;
+																																			t.src=v;s=b.getElementsByTagName(e)[0];
+																																			s.parentNode.insertBefore(t,s)}(window, document,'script',
+																																				'https://connect.facebook.net/en_US/fbevents.js');
+																																			fbq('init', '480583062558761');
+																																			fbq('track', 'PageView');
+																																		</script>
+																																		<noscript><img height="1" width="1" style="display:none"
+																																			src="https://www.facebook.com/tr?id=480583062558761&ev=PageView&noscript=1"
+																																			/></noscript>
+																																			<!-- End Facebook Pixel Code --></div></div>                </div>
+																																			<div class="widget-column">
+																																				<div id="tag_cloud-4" class="fl-widget clearfix widget_tag_cloud"><div class="fl-widget-title"><h3 class="title">Tags</h3></div><div class="tagcloud"><a href="https://jonathasguerra.com.br/blog/tags/ai/" class="tag-cloud-link tag-link-137 tag-link-position-1" style="font-size: 10.863636363636pt;" aria-label="ai (2 itens)">ai</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/api/" class="tag-cloud-link tag-link-22 tag-link-position-2" style="font-size: 8pt;" aria-label="API (1 item)">API</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/aplicativo/" class="tag-cloud-link tag-link-145 tag-link-position-3" style="font-size: 10.863636363636pt;" aria-label="aplicativo (2 itens)">aplicativo</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/canvas/" class="tag-cloud-link tag-link-16 tag-link-position-4" style="font-size: 8pt;" aria-label="canvas (1 item)">canvas</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/chrome/" class="tag-cloud-link tag-link-66 tag-link-position-5" style="font-size: 10.863636363636pt;" aria-label="chrome (2 itens)">chrome</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/classe-imagens/" class="tag-cloud-link tag-link-57 tag-link-position-6" style="font-size: 10.863636363636pt;" aria-label="classe imagens (2 itens)">classe imagens</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/curso/" class="tag-cloud-link tag-link-146 tag-link-position-7" style="font-size: 12.772727272727pt;" aria-label="curso (3 itens)">curso</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/curso-php/" class="tag-cloud-link tag-link-250 tag-link-position-8" style="font-size: 10.863636363636pt;" aria-label="curso php (2 itens)">curso php</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/desenvolvedor-web/" class="tag-cloud-link tag-link-36 tag-link-position-9" style="font-size: 10.863636363636pt;" aria-label="desenvolvedor web (2 itens)">desenvolvedor web</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/desenvolvimento/" class="tag-cloud-link tag-link-143 tag-link-position-10" style="font-size: 12.772727272727pt;" aria-label="desenvolvimento (3 itens)">desenvolvimento</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/desenvolvimento-de-aplicativos/" class="tag-cloud-link tag-link-209 tag-link-position-11" style="font-size: 14.363636363636pt;" aria-label="desenvolvimento de aplicativos (4 itens)">desenvolvimento de aplicativos</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/dicas/" class="tag-cloud-link tag-link-39 tag-link-position-12" style="font-size: 12.772727272727pt;" aria-label="dicas (3 itens)">dicas</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/email/" class="tag-cloud-link tag-link-26 tag-link-position-13" style="font-size: 8pt;" aria-label="Email (1 item)">Email</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/enviar-email/" class="tag-cloud-link tag-link-27 tag-link-position-14" style="font-size: 8pt;" aria-label="Enviar Email (1 item)">Enviar Email</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/framework/" class="tag-cloud-link tag-link-135 tag-link-position-15" style="font-size: 10.863636363636pt;" aria-label="framework (2 itens)">framework</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/free/" class="tag-cloud-link tag-link-133 tag-link-position-16" style="font-size: 10.863636363636pt;" aria-label="free (2 itens)">free</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/freelancer/" class="tag-cloud-link tag-link-40 tag-link-position-17" style="font-size: 10.863636363636pt;" aria-label="freelancer (2 itens)">freelancer</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/futuro/" class="tag-cloud-link tag-link-119 tag-link-position-18" style="font-size: 15.636363636364pt;" aria-label="futuro (5 itens)">futuro</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/gratis/" class="tag-cloud-link tag-link-83 tag-link-position-19" style="font-size: 12.772727272727pt;" aria-label="gratis (3 itens)">gratis</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/html/" class="tag-cloud-link tag-link-24 tag-link-position-20" style="font-size: 10.863636363636pt;" aria-label="HTML (2 itens)">HTML</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/html5/" class="tag-cloud-link tag-link-23 tag-link-position-21" style="font-size: 12.772727272727pt;" aria-label="HTML5 (3 itens)">HTML5</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/imagens/" class="tag-cloud-link tag-link-51 tag-link-position-22" style="font-size: 14.363636363636pt;" aria-label="imagens (4 itens)">imagens</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/inteligencia-artificial/" class="tag-cloud-link tag-link-127 tag-link-position-23" style="font-size: 15.636363636364pt;" aria-label="inteligencia artificial (5 itens)">inteligencia artificial</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/javascript/" class="tag-cloud-link tag-link-153 tag-link-position-24" style="font-size: 10.863636363636pt;" aria-label="javascript (2 itens)">javascript</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/laravel/" class="tag-cloud-link tag-link-134 tag-link-position-25" style="font-size: 10.863636363636pt;" aria-label="laravel (2 itens)">laravel</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/m2brimagem/" class="tag-cloud-link tag-link-15 tag-link-position-26" style="font-size: 8pt;" aria-label="m2brimagem (1 item)">m2brimagem</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/melhores/" class="tag-cloud-link tag-link-17 tag-link-position-27" style="font-size: 10.863636363636pt;" aria-label="melhores (2 itens)">melhores</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/melhores-praticas/" class="tag-cloud-link tag-link-19 tag-link-position-28" style="font-size: 8pt;" aria-label="melhores praticas (1 item)">melhores praticas</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/mobile/" class="tag-cloud-link tag-link-207 tag-link-position-29" style="font-size: 10.863636363636pt;" aria-label="mobile (2 itens)">mobile</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/mvc/" class="tag-cloud-link tag-link-29 tag-link-position-30" style="font-size: 10.863636363636pt;" aria-label="MVC (2 itens)">MVC</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/nutricao/" class="tag-cloud-link tag-link-191 tag-link-position-31" style="font-size: 10.863636363636pt;" aria-label="nutrição (2 itens)">nutrição</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/php/" class="tag-cloud-link tag-link-12 tag-link-position-32" style="font-size: 22pt;" aria-label="php (14 itens)">php</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/php7/" class="tag-cloud-link tag-link-59 tag-link-position-33" style="font-size: 10.863636363636pt;" aria-label="php7 (2 itens)">php7</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/phpcanvas/" class="tag-cloud-link tag-link-14 tag-link-position-34" style="font-size: 8pt;" aria-label="phpcanvas (1 item)">phpcanvas</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/php-iniciante/" class="tag-cloud-link tag-link-20 tag-link-position-35" style="font-size: 8pt;" aria-label="php iniciante (1 item)">php iniciante</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/plugins/" class="tag-cloud-link tag-link-67 tag-link-position-36" style="font-size: 14.363636363636pt;" aria-label="plugins (4 itens)">plugins</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/praticas/" class="tag-cloud-link tag-link-18 tag-link-position-37" style="font-size: 8pt;" aria-label="praticas (1 item)">praticas</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/programacao/" class="tag-cloud-link tag-link-21 tag-link-position-38" style="font-size: 10.863636363636pt;" aria-label="programação (2 itens)">programação</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/robo/" class="tag-cloud-link tag-link-181 tag-link-position-39" style="font-size: 12.772727272727pt;" aria-label="robo (3 itens)">robo</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/robos/" class="tag-cloud-link tag-link-179 tag-link-position-40" style="font-size: 12.772727272727pt;" aria-label="robos (3 itens)">robos</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/status-bateria/" class="tag-cloud-link tag-link-25 tag-link-position-41" style="font-size: 8pt;" aria-label="Status Bateria (1 item)">Status Bateria</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/tratamento-de-imagens/" class="tag-cloud-link tag-link-13 tag-link-position-42" style="font-size: 8pt;" aria-label="tratamento de imagens (1 item)">tratamento de imagens</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/tutorial/" class="tag-cloud-link tag-link-109 tag-link-position-43" style="font-size: 10.863636363636pt;" aria-label="tutorial (2 itens)">tutorial</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/via-php/" class="tag-cloud-link tag-link-28 tag-link-position-44" style="font-size: 8pt;" aria-label="Via php (1 item)">Via php</a>
+																																					<a href="https://jonathasguerra.com.br/blog/tags/wordpress/" class="tag-cloud-link tag-link-107 tag-link-position-45" style="font-size: 15.636363636364pt;" aria-label="wordpress (5 itens)">wordpress</a></div>
+																																				</div>                </div>
+																																				<div class="widget-column">
+																																					<div id="text-2" class="fl-widget clearfix widget_text"><div class="fl-widget-title"><h3 class="title">Links Patrocinados</h3></div>			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+																																						<!-- Blog Rodapé 2016 -->
+																																						<ins class="adsbygoogle"
+																																						style="display:block"
+																																						data-ad-client="ca-pub-0675090466176858"
+																																						data-ad-slot="6331090525"
+																																						data-ad-format="auto"></ins>
+																																						<script>
+																																							(adsbygoogle = window.adsbygoogle || []).push({});
+																																						</script>
+																																						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+																																						<script>
+																																							(adsbygoogle = window.adsbygoogle || []).push({
+																																								google_ad_client: "ca-pub-0675090466176858",
+																																								enable_page_level_ads: true
+																																							});
+																																						</script></div>
+																																					</div>                </div>
+																																				</div>
+																																			</div>
+																																			<div id="fl-footer-bottom" class="fl-container clearfix">
+																																				<div class="footer-menu">
+																																				</div>
+																																				<div class="copyright">
+																																					© 2019 <a href="http://jonathasguerra.com.br" target="_blank">Jonathas</a>  <a href="https://guerrabyte.com.br" target="_blank">Guerra</a> - Todos os direitos reservados.            </div>
+																																				</div>
+																																			</footer>
+																																			
+																																			<!-- End Document -->
+
+																																			<script type='text/javascript'>
+																																				/* <![CDATA[ */
+																																				var wpcf7 = {"apiSettings":{"root":"https:\/\/jonathasguerra.com.br\/blog\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+																																				/* ]]> */
+																																			</script>
+																																			<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.3'></script>
+																																			<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-content/plugins/simple-share-buttons-adder/js/ssba.js?ver=4.9.10'></script>
+																																			<script type='text/javascript'>
+																																				Main.boot( [] );
+																																			</script>
+																																			<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-content/themes/buzzmag/js/fitvids.js?ver=1.1'></script>
+																																			<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-content/themes/buzzmag/js/jquery.infinitescroll.min.js?ver=2.1.0'></script>
+																																			<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-content/themes/buzzmag/js/theia-sticky-sidebar.js?ver=1.4.0'></script>
+																																			<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-content/themes/buzzmag/js/custom.js?ver=1.0'></script>
+																																			<script type='text/javascript' src='https://jonathasguerra.com.br/blog/wp-includes/js/wp-embed.min.js?ver=4.9.10'></script>
+																																		</body>
+																																		</html>
