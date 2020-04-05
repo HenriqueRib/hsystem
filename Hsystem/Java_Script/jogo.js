@@ -5,6 +5,8 @@ var vidas = 1;
 var tempo = 10;
 var criaMosquitoTempo = 1500
 var nivel = window.location.search
+
+var ponto = 0 ;
 nivel = nivel.replace('?', '')
 
 if (nivel === 'normal'){
@@ -33,6 +35,7 @@ var cronometro = setInterval(function(){
 		clearInterval(cronometro)  /* Aqui limpamos a função e por isso ela não fica chamando a função */
 		clearInterval(criaMosquito)
 		window.location.href = 'vitoria.html'
+		// alert('Seu ponto foi ' ponto)
 	}else{
 	document.getElementById('cronometro').innerHTML = tempo
 	}
@@ -71,6 +74,7 @@ function posicaoRandomica() {
 	mosquito.id = 'mosquito'
 	mosquito.onclick = function(){
 		this.remove()
+		ponto++
 	}
 
 
