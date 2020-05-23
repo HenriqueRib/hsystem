@@ -14,9 +14,10 @@ if (nivel === 'normal'){
 }else if(nivel === 'dificil'){
 	criaMosquitoTempo = 1000
 }else if(nivel === 'impossivel'){
-	criaMosquitoTempo = 750
+	criaMosquitoTempo = 50
 }else if (nivel === 'secreto'){
 	alert('Voce precisa ganhar o modo impossivel 5 vezes')
+	window.location.href = 'game.html'
 }
 
 
