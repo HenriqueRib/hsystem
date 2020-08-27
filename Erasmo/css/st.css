@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+  /*  font-family: 'Audiowide', cursive;*/
+    background-image:url(https://www.jrcimento.com.br/img_vendas/g1_289_301_1031_020614.jpg);
+    background-size: auto 100vh; 
+}
+footer {
+    width:100%;
+}
